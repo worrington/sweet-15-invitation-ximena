@@ -1,5 +1,7 @@
-@import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "tailwindcss";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +21,79 @@
   }
 }
 
+@font-face {
+  font-family: "High Spirited";
+  src: url("/fonts/High Spirited.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-highspirited {
+  font-family: "High Spirited", cursive;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mea-culpa {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.invitation-section {
+  background: url('/marco.jpg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.invitation-section-persons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg-golden {
+  background: linear-gradient(135deg, #D4AF37 0%, #f9e79f 50%, #b8860b 100%);
+}
+
+
+.marco {
+  border: solid;
+  border-style: double;
+  border-color: #D4AF37;
+  border-width: 5px;
+  margin: 15px;
+}
+
+.h-timeline {
+  height: calc(100% - 235px);
+}
+
+
+.dress-code-section {
+  background: url('/6-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes softGlow {
+  0%, 100% { text-shadow: 0 0 8px #ffffff80, 0 0 16px #ffd1b5; }
+  50% { text-shadow: 0 0 12px #fff, 0 0 24px #ffc1a5; }
+}
+
+.invitation-gallery {
+  background: url('/1-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
