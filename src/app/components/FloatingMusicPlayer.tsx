@@ -10,7 +10,7 @@ export default function FloatingMusicPlayer() {
 
   useEffect(() => {
     const shouldPlay = localStorage.getItem("playMusic") === "true";
-    const audio = new Audio("/song.mp3");
+    const audio = new Audio("/sweet-15-invitation-ximena/song.mp3");
     audio.loop = true;
     audio.volume = 0.7;
     audioRef.current = audio;

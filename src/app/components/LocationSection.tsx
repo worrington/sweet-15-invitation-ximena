@@ -36,7 +36,7 @@ export default function LocationSection() {
         <div
           className="w-full h-[350px]"
           style={{
-            background: "url(/iglesia.jpeg)",
+            background: "url(/sweet-15-invitation-ximena/iglesia.jpeg)",
             backgroundSize: "cover",
             backgroundPosition: "center top",
           }}
@@ -78,7 +78,7 @@ export default function LocationSection() {
         <div
           className="w-full h-[350px]"
           style={{
-            background: "url(/evento.jpeg)",
+            background: "url(/sweet-15-invitation-ximena/evento.jpeg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

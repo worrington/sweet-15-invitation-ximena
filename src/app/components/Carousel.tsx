@@ -5,12 +5,12 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/galeria/ximena1.jpg",
-  "/galeria/ximena2.jpg",
-  "/galeria/ximena3.jpg",
-  "/galeria/ximena4.jpg",
-  "/galeria/ximena5.jpg",
-  "/galeria/ximena6.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena1.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena2.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena3.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena4.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena5.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena6.jpg",
 ];
 
 export default function Carousel() {
@@ -69,7 +69,7 @@ export default function Carousel() {
 
   return (
     <div
-      className="relative w-full w-full overflow-hidden py-8 select-none invitation-gallery"
+      className="relative w-full overflow-hidden py-8 select-none invitation-gallery"
       // Touch events
       onTouchStart={(e) => handleStart(e.touches[0].clientX)}
       onTouchMove={(e) => handleMove(e.touches[0].clientX)}

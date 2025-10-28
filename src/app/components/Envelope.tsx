@@ -34,7 +34,7 @@ export default function ElegantEnvelope() {
 
   return (
     <div
-        style={{background: "url('/1-bg.png')", backgroundPosition: "center", backgroundSize: "cover"}}
+        style={{background: "url('/sweet-15-invitation-ximena/1-bg.png')", backgroundPosition: "center", backgroundSize: "cover"}}
         className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#ffd6bb73] to-[#fabb9385] overflow-hidden">
 
       {/* Texto de invitación */}
@@ -57,7 +57,7 @@ export default function ElegantEnvelope() {
       >
         {/* Imagen del sobre cerrado */}
         <motion.img
-          src="/icono-sobre.png"
+          src="/sweet-15-invitation-ximena/icono-sobre.png"
           alt="envelope"
           className="w-80 drop-shadow-lg"
           initial={{ rotateX: 0 }}
