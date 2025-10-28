@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { motion } from "framer-motion";
@@ -24,9 +25,10 @@ const fadeUp = {
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 1, delay, ease: "easeOut" },
+    transition: { duration: 1, delay, ease: [0.22, 1, 0.36, 1] as any},
   }),
 };
+
 
 export default function MyXV() {
   return (

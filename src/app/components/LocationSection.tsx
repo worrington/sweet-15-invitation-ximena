@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 
-const fadeSlide = (direction: "left" | "right") => ({
-  hidden: { opacity: 0, x: direction === "left" ? -100 : 100 },
+export const fadeSlide = (direction: "left" | "right" = "left"): Variants => ({
+  hidden: { opacity: 0, x: direction === "left" ? -50 : 50 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 0.5, ease: ["easeInOut"] as any }, // ✅ workaround rápido
   },
 });
 
@@ -18,7 +19,7 @@ export default function LocationSection() {
         className="font-highspirited md:text-7xl text-6xl pb-16"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
         viewport={{ once: true }}
       >
         Dónde y Cuándo
