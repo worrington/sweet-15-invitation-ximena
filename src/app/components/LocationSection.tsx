@@ -57,7 +57,7 @@ export default function LocationSection() {
                 transition-all duration-300 ease-in-out
                 hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37]
                 focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"
-              href="https://maps.app.goo.gl/Ge5ruqzjQht7m1Vx5"
+              href="https://maps.app.goo.gl/7VZjTTC1obHgHD6R6"
               target="_blank"
             >
               Ver Mapa
@@ -97,7 +97,7 @@ export default function LocationSection() {
                 transition-all duration-300 ease-in-out
                 hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37]
                 focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"
-              href="https://maps.app.goo.gl/7VZjTTC1obHgHD6R6"
+              href="https://maps.app.goo.gl/Ge5ruqzjQht7m1Vx5"
               target="_blank"
             >
               Ver Mapa

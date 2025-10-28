@@ -9,7 +9,7 @@ import ConfirmAttendance from "../components/ConfirmAttendance";
 import Carousel from "../components/Carousel";
 import FloatingMusicPlayer from "../components/FloatingMusicPlayer";
 
-const url = "http://localhost:3000";
+const url = "https://worrington.github.io/sweet-15-invitation-ximena";
 
 const events = [
   { time: "16:30 hrs.", title: "Ceremonia Religiosa", icon: `${url}/iglesiaIcon.png` },
