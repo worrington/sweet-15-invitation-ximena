@@ -193,7 +193,7 @@ export default function MyXV() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: "all" }}
           >
-            Es la tradición de regalar dinero <br></br>dentro de un sobre al festejado el día del evento
+            Es la tradición de regalar dinero <br></br>dentro de un sobre a la festejada el día del evento
           </motion.p>
         </div>
         <div
