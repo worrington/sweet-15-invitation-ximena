@@ -17,7 +17,7 @@ const events = [
   { time: "18:00 hrs.", title: "Recepción", icon: `${url}/brindis.png` },
   { time: "19:00 hrs.", title: "Presentación y Vals", icon: `${url}/presentacionIcon.png` },
   { time: "20:00 hrs.", title: "Cena", icon: `${url}/cenaIcon.png` },
-  { time: "20:30 hrs.", title: "A bailar", icon: `${url}/baileIcon.png` },
+  { time: "21:00 hrs.", title: "Inicia Norteño", icon: `${url}/baileIcon.png` },
 ];
 
 const fadeUp = {
@@ -169,7 +169,7 @@ export default function MyXV() {
           </motion.h2>
 
           <motion.p
-            className="md:text-5xl text-4xl font-script mb-2 z-10 font-highspirited text-white"
+            className="md:text-6xl text-5xl font-script mb-2 z-10 font-highspirited text-white"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -185,33 +185,11 @@ export default function MyXV() {
               className="object-contain"
             />
           </div>
-
-          <motion.p
-            className="md:text-2xl text-xl font-script mb-2 z-10 openSans text-white"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            viewport={{ once: true, amount: "all" }}
-          >
-            Es la tradición de regalar dinero <br></br>dentro de un sobre a la festejada el día del evento
-          </motion.p>
         </div>
         <div
           className="flex flex-col items-center  pt-16 pb-24 dress-code-section"
         >
-          <motion.h2
-            className="font-highspirited md:text-7xl text-6xl pb-16 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            Código de Vestimenta
-          </motion.h2>
-
-          <Image src={`${url}/dress-code.png`} alt="alt" width={250} height={250} />
-          <h2 className="text-2xl openSans py-4">Formal</h2>
-          <p className="mt-4 md:text-6xl text-4xl text-gray-700 font-highspirited">
+          <p className="font-highspirited md:text-7xl text-6xl pb-16 text-center">
             Colores reservados para la quinceañera
           </p>
 
