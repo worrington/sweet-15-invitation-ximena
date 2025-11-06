@@ -102,11 +102,11 @@ export default function MyXV() {
             custom={0.4}
           >
             <p className="md:text-6xl text-5xl font-highspirited md:mb-8 mb-4">Mis Padres</p>
-            <motion.p className="md:text-2xl text-xl my-2 max-w-full" variants={fadeUp} custom={0.6}>
-              David Eduardo Coronado
+            <motion.p className="md:text-2xl text-lg my-2 max-w-full" variants={fadeUp} custom={0.6}>
+              David Eduardo Coronado González
             </motion.p>
-            <motion.p className="md:text-2xl text-xl my-2 max-w-full" variants={fadeUp} custom={0.8}>
-              Elizabeth Delgado
+            <motion.p className="md:text-2xl text-lg my-2 max-w-full" variants={fadeUp} custom={0.8}>
+              Elizabeth Delgado Alvarez
             </motion.p>
           </motion.div>
 
@@ -120,11 +120,11 @@ export default function MyXV() {
             custom={1}
           >
             <p className="md:text-6xl text-5xl font-highspirited md:mb-8 mb-4">Mis Padrinos</p>
-            <motion.p className="md:text-2xl text-xl my-2 max-w-full" variants={fadeUp} custom={1.2}>
-              Luis Antonio Delgado
+            <motion.p className="md:text-2xl text-lg my-2 max-w-full" variants={fadeUp} custom={1.2}>
+              Luis Antonio Delgado Alvarez
             </motion.p>
-            <motion.p className="md:text-2xl text-xl my-2 max-w-full" variants={fadeUp} custom={1.4}>
-              Elia Guadalupe Hernández
+            <motion.p className="md:text-2xl text-lg my-2 max-w-full" variants={fadeUp} custom={1.4}>
+              Elia Guadalupe Hernández Barajas
             </motion.p>
           </motion.div>
         </div>
@@ -165,7 +165,7 @@ export default function MyXV() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: "all" }}
           >
-            Mi mejor regalo es tu presencia pero si quieres tener algún detalle conmigo te comparto la siguiente opción:
+            Mi mejor regalo es tu presencia, pero si quieres tener algún detalle conmigo te comparto la siguiente opción:
           </motion.h2>
 
           <motion.p
