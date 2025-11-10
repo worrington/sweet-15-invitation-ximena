@@ -6,21 +6,22 @@ import { useEffect, useState } from "react";
 export default function ConfirmAttendance() {
   const [name, setName] = useState<string>("");
   const [guests, setGuests] = useState<number>(1);
+   const [minor, setMinor] = useState<number>(0);
 
   useEffect(() => {
     // Leer desde params o localStorage o valores por defecto
     const storedName =  localStorage.getItem("inv_name") || "";
-    const storedGuests =
-      Number(localStorage.getItem("inv_guests")) ||
-      1;
+    const storedGuests = Number(localStorage.getItem("inv_guests")) || 1;
+    const storedMinor = Number(localStorage.getItem("inv_minor")) || 0;
 
     setName(storedName);
     setGuests(storedGuests);
+    setMinor(storedMinor)
 
   }, []);
 
   const handleConfirm = () => {
-    const message = `${name || "Invitado"}, confirmo asistencia para ${guests} ${guests > 1 ? "personas" : "persona"}`;
+    const message = `${name || "Invitado"}, confirmo asistencia para ${guests} ${guests > 1 ? "Adultos" : "Adulto"} ${minor > 0 && minor === 1 ? "y 1 Niño":  `y ${minor} Niños`}`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappNumber = "+523315641639";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -43,12 +44,12 @@ export default function ConfirmAttendance() {
       <h2 className="text-5xl md:text-6xl mb-6 font-highspirited">
         Invitación {name && <> para <br></br>{name}</>}
       </h2>
-      <p className="text-lg mb-10">
+      <p className="text-lg">
         {name
-          ? `${guests} ${guests > 1 ? "personas" : "persona"}`
-          : "1 persona"}
+          ? `${guests} ${guests > 1 ? "Adultos" : "Adulto"}`
+          : "1 Adulto"}
       </p>
-
+      {minor > 0 && <p className="text-lg mb-10">{minor === 1 ? "y 1 niño" : `y ${minor} niños`}</p>}
       <button
         onClick={handleConfirm}
         className="relative inline-block px-8 py-4 md:text-xl text-md text-white font-semibold rounded-full bg-gradient-to-r from-[#dcb020] to-[#D4AF37] shadow-lg shadow-[#d4af3766] transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37] focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/sweet-15-invitation-ximena/galeria/ximena1.jpg",
+  "/sweet-15-invitation-ximena/galeria/ximena.jpeg",
   "/sweet-15-invitation-ximena/galeria/ximena3.jpg",
   "/sweet-15-invitation-ximena/galeria/ximena4.jpg",
   "/sweet-15-invitation-ximena/galeria/ximena5.jpg",

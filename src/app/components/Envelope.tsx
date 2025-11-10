@@ -20,13 +20,15 @@ export default function ElegantEnvelope() {
     const urlParams = new URLSearchParams(window.location.search);
     const nameParam = urlParams.get("name");
     const guestsParam = urlParams.get("guests");
+    const minorParam = urlParams.get("minor") || null;
 
     // Guardar en localStorage si existen
     if (nameParam) localStorage.setItem("inv_name", nameParam);
     if (guestsParam) localStorage.setItem("inv_guests", guestsParam);
+    localStorage.setItem("inv_minor", minorParam || "0");
 
     // Limpiar los parámetros de la URL
-    if (nameParam || guestsParam) {
+    if (nameParam || guestsParam || minorParam) {
       const cleanUrl = window.location.origin + window.location.pathname;
       window.history.replaceState({}, "", cleanUrl);
     }
