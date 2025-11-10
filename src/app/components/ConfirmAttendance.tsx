@@ -49,10 +49,10 @@ export default function ConfirmAttendance() {
           ? `${guests} ${guests > 1 ? "Adultos" : "Adulto"}`
           : "1 Adulto"}
       </p>
-      {minor > 0 && <p className="text-lg mb-10">{minor === 1 ? "y 1 niño" : `y ${minor} niños`}</p>}
+      {minor > 0 && <p className="text-lg">{minor === 1 ? "y 1 niño" : `y ${minor} niños`}</p>}
       <button
         onClick={handleConfirm}
-        className="relative inline-block px-8 py-4 md:text-xl text-md text-white font-semibold rounded-full bg-gradient-to-r from-[#dcb020] to-[#D4AF37] shadow-lg shadow-[#d4af3766] transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37] focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"
+        className="relative inline-block px-8 py-4 md:text-xl text-md mt-10 text-white font-semibold rounded-full bg-gradient-to-r from-[#dcb020] to-[#D4AF37] shadow-lg shadow-[#d4af3766] transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37] focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"
       >
         Confirmar asistencia
       </button>
