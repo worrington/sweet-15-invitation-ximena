@@ -33,7 +33,7 @@ const fadeUp = {
 export default function MyXV() {
   return (
     <div className="min-h-screen gap-10">
-      <main>
+      <main style={{overflowX: "hidden"}}>
         <FloatingMusicPlayer />
         <div
             style={{background: "url('/sweet-15-invitation-ximena/1-bg.png')", backgroundPosition: "center", backgroundSize: "cover"}}
