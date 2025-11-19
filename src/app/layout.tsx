@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
+  icons: {
+    icon: "https://worrington.github.io/sweet-15-invitation-ximena/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +34,9 @@ export default function RootLayout({
       <body
         className="antialiased"
       >
+      <head>
+        <link rel="icon" href="https://worrington.github.io/sweet-15-invitation-ximena/favicon.ico" sizes="any" />
+      </head>
         {children}
       </body>
     </html>
