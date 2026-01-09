@@ -214,6 +214,14 @@ export default function MyXV() {
         <div>
          <ConfirmAttendance />
         </div>
+        <div className="bg-[#ecb498e6] px-1 py-12 bg-cover bg-center flex flex-col justify-center items-center">
+          <p className="md:text-8xl text-6xl font-script mb-10 z-10 font-highspirited text-white">
+            Mapa de mesas
+          </p>
+          <div className="flex justify-center relative aspect-video w-full">
+            <Image src="/mesas-white.png" alt="alt" fill className="object-contain"/>
+          </div>
+        </div>
 
         <Carousel />
 

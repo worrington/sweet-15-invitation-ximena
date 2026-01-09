@@ -6,17 +6,20 @@ import { useEffect, useState } from "react";
 export default function ConfirmAttendance() {
   const [name, setName] = useState<string>("");
   const [guests, setGuests] = useState<number>(1);
-   const [minor, setMinor] = useState<number>(0);
+  const [minor, setMinor] = useState<number>(0);
+  const [table, setTable] = useState<string>("");
 
   useEffect(() => {
     // Leer desde params o localStorage o valores por defecto
     const storedName =  localStorage.getItem("inv_name") || "";
+    const storedTable =  localStorage.getItem("table") || "";
     const storedGuests = Number(localStorage.getItem("inv_guests")) || 1;
     const storedMinor = Number(localStorage.getItem("inv_minor")) || 0;
 
     setName(storedName);
     setGuests(storedGuests);
     setMinor(storedMinor)
+    setTable(storedTable);
 
   }, []);
 
@@ -44,18 +47,15 @@ export default function ConfirmAttendance() {
       <h2 className="text-5xl md:text-6xl mb-6 font-highspirited">
         Invitación {name && <> para <br></br>{name}</>}
       </h2>
-      <p className="text-lg">
+      <p className="text-2xl">
         {name
           ? `${guests} ${guests > 1 ? "Adultos" : "Adulto"}`
           : "1 Adulto"}
       </p>
-      {minor > 0 && <p className="text-lg">{minor === 1 ? "y 1 niño" : `y ${minor} niños`}</p>}
-      <button
-        onClick={handleConfirm}
-        className="relative inline-block px-8 py-4 md:text-xl text-md mt-10 text-white font-semibold rounded-full bg-gradient-to-r from-[#dcb020] to-[#D4AF37] shadow-lg shadow-[#d4af3766] transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 hover:from-[#dcb020] hover:to-[#D4AF37] focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]"
-      >
-        Confirmar asistencia
-      </button>
+      {minor > 0 && <p className="text-2xl">{minor === 1 ? "y 1 niño" : `y ${minor} niños`}</p>}
+
+      <p className="text-4xl pt-12">Mesa asignada: {table || "Verificar en recepción"}</p>
+
     </div>
   );
 }

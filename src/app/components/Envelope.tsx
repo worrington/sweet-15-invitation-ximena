@@ -21,6 +21,10 @@ export default function ElegantEnvelope() {
     const nameParam = urlParams.get("name");
     const guestsParam = urlParams.get("guests");
     const minorParam = urlParams.get("minor") || null;
+    const tableParam = urlParams.get("table") || null;
+
+    // Guardar mesa si existe
+    if (tableParam) localStorage.setItem("table", tableParam);
 
     // Guardar en localStorage si existen
     if (nameParam) localStorage.setItem("inv_name", nameParam);
