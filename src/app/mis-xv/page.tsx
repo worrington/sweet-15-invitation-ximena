@@ -219,7 +219,7 @@ export default function MyXV() {
             Mapa de mesas
           </p>
           <div className="flex justify-center relative aspect-video w-full">
-            <Image src="/mesas-white.png" alt="alt" fill className="object-contain"/>
+            <Image src="/sweet-15-invitation-ximena/mesas-white.png" alt="alt" fill className="object-contain"/>
           </div>
         </div>
 
